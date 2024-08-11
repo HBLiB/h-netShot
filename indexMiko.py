@@ -67,7 +67,7 @@ def guessOS(host,dDict,dFinal,dNotReachable):
 
 startMultiThread(devices, guessOS, devices,finalDevices,notReachable)
 
-unreachable()
+unreachable(notReachable)
 
 # Write devices to JSON file
 current_time = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")

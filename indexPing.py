@@ -59,7 +59,7 @@ for entry in devicesRaw:
 
 startMultiThread(devices, processHostsByName, devices, notReachable)
 
-unreachable()
+unreachable(notReachable)
 
 current_time = datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")
 

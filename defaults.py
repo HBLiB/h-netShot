@@ -45,10 +45,10 @@ def menuListFiles(devicesDir,pattern):
         print(f"Using file: {selected_file}")
         return selected_file 
 
-def unreachable():        
+def unreachable(notReachable):        
     # Write unreachable devices to file
     if len(notReachable) != 0:
-        with open(f"{devicesDir} unreachable.list", 'w') as fp:
+        with open(f"{devicesDir}unreachable.list", 'w') as fp:
             for item in notReachable:
                 fp.write("%s\n" % item)
 
