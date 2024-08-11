@@ -7,10 +7,11 @@ indexPing.py = Create an index of devices Netmiko can use. If you don't want net
 
 queryCommands.py = The commands you want to perform and the name it will be saved as, Dictonary
 
-sendQuery.py = Run the commands
+sendQuery.py = Run the show commands defined in queryCommands.py
+
+sendEdit.py = Run configuration commands defined in editCommands.py
 
 defaultsLookup.py = Functions to use in lookup.py
 
-lookup.py = Lookup captured data
-
+lookup.py = Lookup captured data (Soon)
 
