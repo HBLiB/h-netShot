@@ -1,0 +1,639 @@
+{
+    "192.168.178.199": {
+        "device_type": "arista_eos"
+    },
+    "192.168.178.59": {
+        "device_type": "juniper_junos",
+        "route": "{
+    \"route-information\" : [
+    {
+        \"attributes\" : {\"xmlns\" : \"http://xml.juniper.net/junos/23.2R0/junos-routing\"}, 
+        \"route-table\" : [
+        {
+            \"comment\" : \"keepalive\", 
+            \"table-name\" : [
+            {
+                \"data\" : \"inet.0\"
+            }
+            ], 
+            \"destination-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"total-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"active-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"holddown-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"hidden-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"prefix-max\" : [
+            {
+                \"data\" : \"1048576\"
+            }
+            ], 
+            \"prefix-threshold\" : [
+            {
+                \"data\" : \"1048576\"
+            }
+            ], 
+            \"prefix-label\" : [
+            {
+                \"data\" : \"destinations\"
+            }
+            ], 
+            \"rt\" : [
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"192.168.178.0/24\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Direct\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:35\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17555\"}
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"selected-next-hop\" : [
+                        {
+                            \"data\" : [null]
+                        }
+                        ], 
+                        \"via\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }, 
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"192.168.178.59/32\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:35\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17555\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"nh-local-interface\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            \"table-name\" : [
+            {
+                \"data\" : \"inet6.0\"
+            }
+            ], 
+            \"destination-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"total-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"active-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"holddown-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"hidden-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"prefix-max\" : [
+            {
+                \"data\" : \"1048576\"
+            }
+            ], 
+            \"prefix-threshold\" : [
+            {
+                \"data\" : \"1048576\"
+            }
+            ], 
+            \"prefix-label\" : [
+            {
+                \"data\" : \"destinations\"
+            }
+            ], 
+            \"rt\" : [
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"fe80::5200:ff:fe02:0/128\", 
+                    \"attributes\" : {\"junos:emit\" : \"emit\"}
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:41\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17561\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"nh-local-interface\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }, 
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"ff02::2/128\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"INET6\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:41\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17561\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"MultiRecv\"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+"
+    },
+    "192.168.178.164": {
+        "device_type": "juniper_junos",
+        "route": "{
+    \"route-information\" : [
+    {
+        \"attributes\" : {\"xmlns\" : \"http://xml.juniper.net/junos/23.2R0/junos-routing\"}, 
+        \"route-table\" : [
+        {
+            \"comment\" : \"keepalive\", 
+            \"table-name\" : [
+            {
+                \"data\" : \"inet.0\"
+            }
+            ], 
+            \"destination-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"total-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"active-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"holddown-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"hidden-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"rt\" : [
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"192.168.178.0/24\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Direct\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:32\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17552\"}
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"selected-next-hop\" : [
+                        {
+                            \"data\" : [null]
+                        }
+                        ], 
+                        \"via\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }, 
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"192.168.178.164/32\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:32\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17552\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"nh-local-interface\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }, 
+        {
+            \"table-name\" : [
+            {
+                \"data\" : \"inet6.0\"
+            }
+            ], 
+            \"destination-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"total-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"active-route-count\" : [
+            {
+                \"data\" : \"2\"
+            }
+            ], 
+            \"holddown-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"hidden-route-count\" : [
+            {
+                \"data\" : \"0\"
+            }
+            ], 
+            \"rt\" : [
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"fe80::5200:ff:fe03:0/128\", 
+                    \"attributes\" : {\"junos:emit\" : \"emit\"}
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:45\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17565\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"Local\"
+                    }
+                    ], 
+                    \"nh\" : [
+                    {
+                        \"nh-local-interface\" : [
+                        {
+                            \"data\" : \"fxp0.0\"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }, 
+            {
+                \"attributes\" : {\"junos:style\" : \"brief\"}, 
+                \"rt-destination\" : [
+                {
+                    \"data\" : \"ff02::2/128\"
+                }
+                ], 
+                \"rt-entry\" : [
+                {
+                    \"active-tag\" : [
+                    {
+                        \"data\" : \"*\"
+                    }
+                    ], 
+                    \"current-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"last-active\" : [
+                    {
+                        \"data\" : [null]
+                    }
+                    ], 
+                    \"protocol-name\" : [
+                    {
+                        \"data\" : \"INET6\"
+                    }
+                    ], 
+                    \"preference\" : [
+                    {
+                        \"data\" : \"0\"
+                    }
+                    ], 
+                    \"age\" : [
+                    {
+                        \"data\" : \"04:52:45\", 
+                        \"attributes\" : {\"junos:seconds\" : \"17565\"}
+                    }
+                    ], 
+                    \"nh-type\" : [
+                    {
+                        \"data\" : \"MultiRecv\"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
+"
+    }
+}

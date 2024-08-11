@@ -50,13 +50,6 @@ startMultiThread(devices, sendCommand, devices, notReachable,finalOutput)
 
 unreachable(notReachable)
 
-print("everything is done ")
-for host in finalOutput.keys():
-    print(f"--------{host}")
-    for x in finalOutput[host].keys():
-        print(finalOutput[host][x])
-
-
 
 current_time = datetime.datetime.now().strftime("%Y_%m_%d_%H:%M")
 filename = f"Output/Data_{group}_{current_time}.json"

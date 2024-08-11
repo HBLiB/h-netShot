@@ -1,0 +1,59 @@
+{
+    "192.168.178.199": {
+        "device_type": "arista_eos"
+    },
+    "192.168.178.59": {
+        "device_type": "juniper_junos",
+        "route": "
+inet.0: 3 destinations, 3 routes (3 active, 0 holddown, 0 hidden)
+Limit/Threshold: 1048576/1048576 destinations
++ = Active Route, - = Last Active, * = Both
+
+0.0.0.0/0          *[Access-internal/12] 00:00:02, metric 0
+                    >  to 192.168.178.1 via fxp0.0
+192.168.178.0/24   *[Direct/0] 04:52:59
+                    >  via fxp0.0
+192.168.178.59/32  *[Local/0] 04:52:59
+                       Local via fxp0.0
+
+inet6.0: 3 destinations, 3 routes (3 active, 0 holddown, 0 hidden)
+Limit/Threshold: 1048576/1048576 destinations
++ = Active Route, - = Last Active, * = Both
+
+2a02:a210:9bc:6980::9d/128
+                   *[Local/0] 00:00:05
+                       Reject
+fe80::5200:ff:fe02:0/128
+                   *[Local/0] 04:53:05
+                       Local via fxp0.0
+ff02::2/128        *[INET6/0] 04:53:05
+                       MultiRecv
+"
+    },
+    "192.168.178.164": {
+        "device_type": "juniper_junos",
+        "route": "
+inet.0: 3 destinations, 3 routes (3 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+0.0.0.0/0          *[Access-internal/12] 00:00:02, metric 0
+                    >  to 192.168.178.1 via fxp0.0
+192.168.178.0/24   *[Direct/0] 04:52:56
+                    >  via fxp0.0
+192.168.178.164/32 *[Local/0] 04:52:56
+                       Local via fxp0.0
+
+inet6.0: 3 destinations, 3 routes (3 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+2a02:a210:9bc:6980::8d/128
+                   *[Local/0] 00:00:05
+                       Reject
+fe80::5200:ff:fe03:0/128
+                   *[Local/0] 04:53:09
+                       Local via fxp0.0
+ff02::2/128        *[INET6/0] 04:53:09
+                       MultiRecv
+"
+    }
+}

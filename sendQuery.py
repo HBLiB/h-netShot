@@ -54,6 +54,11 @@ unreachable(notReachable)
 current_time = datetime.datetime.now().strftime("%Y_%m_%d_%H:%M")
 filename = f"Output/Data_{group}_{current_time}.json"
 
-with open(filename, 'w') as fp:
-    json.dump(finalOutput, fp,indent=4)
+json_string = json.dumps(finalOutput, indent=4)
 
+# Replace double-escaped newlines with actual newlines for better readability in terminal
+json_string = json_string.replace('\\n', '\n')
+
+# Write the modified JSON string to the file
+with open(filename, 'w') as fp:
+    fp.write(json_string)
