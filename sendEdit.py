@@ -17,6 +17,7 @@ print(json.dumps(devices, indent=4))
 user = "halil"
 passWord = "1234qwer"
 
+group = input("Enter tag to save with ")
 
 
 def sendCommand(dHost, dDict, dNotReachable,dOutput):
@@ -54,3 +55,17 @@ for host in finalOutput.keys():
     print(f"--------{host}")
     for x in finalOutput[host].keys():
         print(finalOutput[host][x])
+
+
+
+current_time = datetime.datetime.now().strftime("%Y_%m_%d_%H:%M")
+filename = f"Output/Data_{group}_{current_time}.json"
+
+json_string = json.dumps(finalOutput, indent=4)
+
+# Replace double-escaped newlines with actual newlines for better readability in terminal
+json_string = json_string.replace('\\n', '\n')
+
+# Write the modified JSON string to the file
+with open(filename, 'w') as fp:
+    fp.write(json_string)
